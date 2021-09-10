@@ -11,8 +11,14 @@ public class RegularTicket extends Ticket{
         this.specialServices = sps;
     }
 
+    public RegularTicket(String mg_road, String mumbai, String maharashtra, String ram, int cphone, String cemail,
+                         String ic8086, String air_india, String bang, String f, String d, String dep, String a08878,
+                         String a10, int i, String snacks) {
+        super(mg_road, mumbai, maharashtra, ram, cphone, cemail, ic8086, air_india, bang, f, d, dep, a08878, a10, i, snacks);
+    }
+
     public String getDetails() {
-        return "PNR: "  this.pnr + " To: " + this.to + " From: " + this.from + " Seat No: " + this.seatNo +
+        return "PNR: " + this.pnr + " To: " + this.to + " From: " + this.from + " Seat No: " + this.seatNo +
                 " Date: " + this.Date + " Departure Time: " + this.departure + " Arrival Time: " + this.arrival +
                 " Price: " + this.price;
     }

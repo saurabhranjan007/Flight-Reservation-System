@@ -1,7 +1,7 @@
 package com.company;
 
 public class Passenger {
-    private id;
+    private int id;
     private static int idCnt;
 
     private static class Address {
@@ -29,7 +29,7 @@ public class Passenger {
 
     private Contact contact;
     static {
-        idCnt = 0
+        idCnt = 0;
     }
 
     public Passenger(String adstreet, String adcity, String adstate, String cname, int cphone, String cemail) {
